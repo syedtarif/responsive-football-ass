@@ -1,0 +1,215 @@
+/*----------
+fonts style*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins:wght@500&display=swap');
+
+/* ----------
+common styles
+-------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*top sections styles
+----------------------*/
+.top-section{
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+.half-one{
+    margin: 7% 5%;
+    padding: 0 5%;
+}
+.half-one img{
+    width: 556.01px;
+    height: 438px;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.button-part{
+    color: #FFFFFF;
+    width: 168px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #E02C6D;
+    margin: -30px 0;
+    border-radius: 20px;
+}
+.button-text{
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* top section responsive 
+--------------------------*/
+@media only screen and (max-width: 688px){
+    .top-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-section img{
+        width: 329px;
+        height: 259.17px;
+    }
+}
+
+
+/* second section styles
+-------------------------*/
+.second-section{
+    /* background-color: #eee8e8; */
+    background-color: #FFFFFF;    
+}
+.player-part img{
+    width: 300px;
+    height: 256px;
+    border-radius: 15px;
+}
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    padding: 50px;
+    justify-content: center;
+
+}
+.player-part{
+    Width : 330px;
+    Height: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px gray;
+}
+.paragraph-style{
+    font-size: 16px;
+    color: #6C6C6C;
+    width: 300px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* second section responsive
+-----------------------------*/
+@media only screen and (max-width: 688px){
+    .all-players{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+}
+
+/* letest section 
+-----------------------*/
+.h1-latest{
+    color: black;
+    margin: 80px 120px;
+}
+
+.content-part{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.content-part img{
+    width: 450px;
+    height: 300px;
+}
+
+.articles{
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 20px gray;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.read-button{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 2%;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #E02C6D;
+    border-radius: 20px;
+}
+
+/* letest section reaponsive
+--------------------------*/
+@media only screen and (max-width: 688px){
+    .content-part{
+        flex-direction: column;
+    }
+    .articles{
+        width: 100%;
+        height: 600px;
+        box-shadow: 10px 10px 20px gray;
+        margin-left: 2%;
+    }
+    .content-part img{
+        width: 80%;
+        height: 250px;
+    }
+    .h1-latest{
+        margin: 20px 200px;
+    }
+}
+
+/* third section styles
+-------------------------*/
+
+.third-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: 6% 0 2% 0;
+}
+.football-icon img{
+    width: 483.87px;
+    height: 110px;
+}
+.last-part-font{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.font-bg{
+    Width: 32px;
+    Height: 30px;
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 1.3em;
+    margin-left: 2%;
+    border-radius: 18px;
+    box-shadow: 10px 10px 20px gray;
+}
+.third-section p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* .copyright{
+    margin-left: 1%;
+} */
