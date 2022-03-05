@@ -12,6 +12,7 @@ body{
 
 /*top sections styles
 ----------------------*/
+
 .top-section{
     display: flex;
     justify-content: center;
@@ -21,16 +22,15 @@ body{
     margin: 7% 5%;
     padding: 0 5%;
 }
-.half-one img{
-    width: 556.01px;
-    height: 438px;
-}
-
 h1{
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
     color: #FFFFFF;
+}
+.half-one img{
+    width: 556.01px;
+    height: 438px;
 }
 
 .button-part{
@@ -67,10 +67,7 @@ h1{
 
 /* second section styles
 -------------------------*/
-.second-section{
-    /* background-color: #eee8e8; */
-    background-color: #FFFFFF;    
-}
+
 .player-part img{
     width: 300px;
     height: 256px;
@@ -90,7 +87,6 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
     margin: 15px;
     border-radius: 10px;
     box-shadow: 10px 10px 20px gray;
@@ -110,6 +106,21 @@ h1{
         display: flex;
         flex-direction: column;
     }
+    .player-part{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+    .player-part img{
+        width: 90%;
+        height: 50%;
+    }
+    .paragraph-style{
+        width: 100%;
+    }
+    .player-name{
+        padding: 0 5%;
+    }
 }
 
 @media only screen and (min-width: 688px) and (max-width: 992px) {
@@ -118,26 +129,28 @@ h1{
 
 /* letest section 
 -----------------------*/
-.h1-latest{
+.h1-latest-partner{
     color: black;
     margin: 80px 120px;
 }
-
 .content-part{
     display: flex;
-    margin-left: 5%;
+    margin: 0 auto;
+    margin: 0 3% 0 2%;
     align-items: center;
 }
 
 .content-part img{
     width: 450px;
     height: 300px;
+    border-radius: 15px;
 }
 
 .articles{
     width: 500px;
     height: 500px;
     box-shadow: 10px 10px 20px gray;
+    border-radius: 10px;
     margin-left: 2%;
     display: flex;
     flex-direction: column;
@@ -159,21 +172,60 @@ h1{
 /* letest section reaponsive
 --------------------------*/
 @media only screen and (max-width: 688px){
+    .h1-latest-partner{
+        margin: 20px 0 20px 60px;
+    }
     .content-part{
         flex-direction: column;
     }
-    .articles{
-        width: 100%;
-        height: 600px;
-        box-shadow: 10px 10px 20px gray;
-        margin-left: 2%;
-    }
     .content-part img{
-        width: 80%;
+        width: 90%;
         height: 250px;
     }
-    .h1-latest{
-        margin: 20px 200px;
+    .articles{
+        width: 95%;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    .articles-text{
+        width: 90%;
+    }
+}
+
+/* partners section style
+--------------------------*/
+.partners-section{
+    margin: 10% 0 2% 0;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+}
+.partners-image{
+    margin-left: 5%;
+    box-shadow: 10px 10px 20px gray;
+}
+.partners img{ 
+    width: 100%;
+    height: 250px;
+}
+
+/* partners section reaponsive
+--------------------------*/
+@media only screen and (max-width: 688px){
+    .partners img{
+        width: 90%;
+        height: 240px;
+    }
+    .partners{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 25%;
+    }
+    .partners-image{
+        margin-top: 15%;
     }
 }
 
@@ -185,7 +237,7 @@ h1{
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-    margin: 6% 0 2% 0;
+    margin: 6% 0 5% 0;
 }
 .football-icon img{
     width: 483.87px;
@@ -210,6 +262,9 @@ h1{
     font-size: 16px;
     color: #6C6C6C;
 }
-/* .copyright{
-    margin-left: 1%;
-} */
+
+@media only screen and (max-width: 688px){
+    .football-icon img{
+        width: 95%;
+    }
+}
